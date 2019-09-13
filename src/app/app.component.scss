@@ -1,0 +1,40 @@
+header {
+    background: black;
+    div{
+        padding: 2em;
+        background-color: darkseagreen;
+    
+
+    .logo {
+        font-weight: bold;
+    }
+
+    nav {
+        
+    font-weight: bold;
+    color: black;
+        ul {
+            justify-self: center;
+            list-style-type: none;
+            margin: 0; padding: 0;
+
+            
+            li {
+                float: right;
+
+
+                a {
+                    padding: 1.5em;
+                    text-transform: uppercase;
+                    font-size: .8em;
+
+                    &:hover {
+                        background: seagreen;
+                    }
+             }
+            
+        }
+    }
+}
+}
+}

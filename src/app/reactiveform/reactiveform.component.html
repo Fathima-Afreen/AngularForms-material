@@ -1,0 +1,29 @@
+<h1 align="center">
+    Reactive Form
+</h1>
+<div align="center" >
+<form id="contactForm" [formGroup]="form" (ngSubmit)="submit()" align="center">
+        <h5 *ngIf="success">Your form is valid!</h5>
+
+        <mat-form-field>
+          <input matInput placeholder="firstname" class="form-control" formControlName="firstname" name="firstname">
+           
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput placeholder="lastname" class="form-control" formControlName="lastname"  name="lastname">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput placeholder="email" formControlName="email" class="form-control"  name="email">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <textarea rows="4" cols="50" matInput placeholder="message" formControlName="message" class="form-control"  name="message"></textarea>
+        </mat-form-field>
+        <br>
+        <button id="btnSubmit" mat-raised-button type="submit" color="primary">Submit</button>
+        <br>
+    </form>
+</div>
+    

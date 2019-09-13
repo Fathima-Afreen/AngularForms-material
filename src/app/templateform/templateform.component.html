@@ -1,0 +1,39 @@
+<h1 align="center">
+   Template Form
+</h1>
+<div>
+<form novalidate (ngSubmit)="onSubmit()" #f="ngForm" align="center">
+<mat-form-field>
+    <input matInput placeholder="FistName"  class="form-control"  name="firstname" ngModel required>   
+  </mat-form-field>
+<br>
+
+  <mat-form-field>
+    <input matInput placeholder="LastName"  class="form-control"  name="lastname" ngModel required>   
+  </mat-form-field>
+<br>
+
+  <mat-form-field>
+    <input matInput placeholder="email" class="form-control"  name="email" ngModel required>
+  </mat-form-field>
+  <br>
+
+  <button id="submit" mat-raised-button type="submit" color="primary" [disabled]="f.invalid" >Submit</button>
+ <br>
+ <br>
+ <br>
+
+  <p>{{f.value.firstname}} </p><br>
+    <p>{{f.value.lastname}} </p><br>
+    <p>{{f.value.email}} </p><br>
+    <p>{{f.value.message}} </p><br>
+ 
+    <strong id="demo"></strong>
+
+</form>
+
+</div>
+
+  
+
+  
